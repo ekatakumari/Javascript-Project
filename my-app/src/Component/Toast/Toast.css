@@ -16,6 +16,7 @@
 .toast-cross{
     background: transparent;
     border:none;
+    cursor:pointer
 }
 .toast-message {
     position: absolute;
@@ -25,6 +26,15 @@
     height: 40px;
     border: 1px solid black;
     border-radius: 5px;
+    animation:slide 1s 1
+}
+@keyframes slide{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
 }
 
 .toast-button-container {

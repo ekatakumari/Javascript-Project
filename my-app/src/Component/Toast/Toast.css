@@ -1,0 +1,57 @@
+.toast-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers vertically */
+    align-items: center; /* Centers horizontally */
+    height: 100vh; /* Full height of the viewport */
+}
+.notification-message{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.toast-cross{
+    background: transparent;
+    border:none;
+}
+.toast-message {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 300px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.toast-button-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px; /* Adds spacing between buttons */
+    justify-content: center;
+    align-items: center;
+    width: auto; /* Avoid width issues */
+}
+
+.suucess-button{
+    background-color: green;
+}
+.warning-button{
+    background-color:orange;
+}
+.info-button{
+background-color: aqua;
+}
+.error-button{
+background-color: red;
+}
+.btn-toast{
+    width:200px;
+    height:40px;
+    color:white;
+    padding:10px;
+    cursor:pointer;
+}

@@ -1,10 +1,12 @@
 import "./Toast.css";
-import { useState } from "react";
+import { useState,useRef } from "react";
 
 export const Toast = () => {
   const [toastlist, setToastList] = useState([]);
-
+  const timeref=useRef({})
   const handleCloseToast = (id) => {
+    clearTimeout(timeref.current[id])
+    delete timeref.current[id]
     setToastList((prevList) => prevList.filter((toast) => toast.id !== id));
   };
 
@@ -12,7 +14,7 @@ export const Toast = () => {
     const id = new Date();
     const newToast = [...toastlist, { id, item, type }];
     setToastList(newToast);
-    setTimeout(()=>{
+    timeref.current[id]=setTimeout(()=>{
       handleCloseToast(id)
     },5000)
   };

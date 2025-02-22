@@ -1,0 +1,40 @@
+.trafficlight-container {
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  height: 50vh;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.traffic-light {
+  width: 50px;
+  border: 1px solid black;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+}
+.trafic-circle {
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  border-radius: 50%;
+  opacity: 0.3;
+ 
+}
+.traffic-green{
+    background-color: green;
+}
+.traffic-red{
+    background-color:red
+}
+.traffic-yellow{
+    background-color:yellow
+}
+.active{
+    opacity:1
+}

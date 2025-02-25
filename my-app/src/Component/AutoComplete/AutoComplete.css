@@ -1,0 +1,16 @@
+.autocomplete-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top:20px;
+}
+.autocomplete-input{
+    width:600px;
+    padding:20px;
+    border-color: 1px solid blue;
+}
+.autocomplete-list{
+    list-style: none;
+    padding:4px;
+
+}
